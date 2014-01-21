@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark RGB led control</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Spark core RGB led control</h1>
+        <p>Show me the code! <small>(github link coming soon)</small></p>
+      </div>
+    </div>
+    <div class="row auth">
+      <div class="large-4 columns">
+        <div class="panel callout">
+          <h2>Auth data</h2>
+        </div>
+      </div>
+      <div class="large-8 columns">
+        <div class="panel">
+          <div class="row">
+            <div class="large-2 columns">
+              <label for="coreid" class="right inline">Core ID</label>
+            </div>
+            <div class="large-10 cloumns">
+              <input type="text" name="coreid">
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-2 columns">
+              <label for="apikey" class="right inline">Spark API key</label>
+            </div>
+            <div class="large-10 cloumns">
+              <input type="text" name="apikey">
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-10 columns large-offset-2">
+              <small>Find your Core ID and API key at <a href="http://spark.io/build">http://spark.io/build</a>.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mode">
+      <div class="large-4 columns">
+        <div class="panel callout">
+          <h2>RGB led mode</h2>
+        </div>
+      </div>
+      <div class="large-8 columns">
+        <ul class="button-group row">
+          <li class="large-3 columns large-offset-3"><a href="#" id="mode_user" class="button success">User control</a></li>
+          <li class="large-3 columns"><a href="#" id="mode_auto" class="button alert">System control</a></li>
+          <li class="columns"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row color">
+      <div class="large-4 columns">
+        <div class="panel callout">
+          <h2>RGB led color</h2>
+        </div>
+      </div>
+      <div class="large-8 columns">
+        <div class="row">
+          <form action="#" method="post">
+            <div class="large-2 columns">
+              <label for="color" class="right inline">Color</label>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" name="color">
+            </div>
+            <div class="large-4 columns">
+              <button style="width: 100%">Set</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
